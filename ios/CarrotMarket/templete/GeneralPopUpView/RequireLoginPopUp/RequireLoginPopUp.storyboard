@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Require Login Pop Up-->
+        <scene sceneID="2MC-WU-7bg">
+            <objects>
+                <viewController storyboardIdentifier="RequireLoginPopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T5L-Oo-gJH" customClass="RequireLoginPopUp" customModule="carrotTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZaJ-Y7-g9u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5f5-zZ-cIK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-fe-eRD">
+                                <rect key="frame" x="45" y="348" width="324" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-P4-rW6">
+                                        <rect key="frame" x="20" y="71" width="284" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zhu-LJ-Ojo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="로그인/가입">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedPresentLoginViewBtn:" destination="T5L-Oo-gJH" eventType="touchUpInside" id="4Nw-OT-06R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-bL-HMF">
+                                        <rect key="frame" x="15" y="121" width="294" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eaK-0V-icI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="취소">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissBtn:" destination="T5L-Oo-gJH" eventType="touchUpInside" id="iXi-lO-ysU"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입 또는 로그인후 이용할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5P-fA-ceq">
+                                        <rect key="frame" x="20" y="20" width="284" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KEv-P4-rW6" firstAttribute="top" secondItem="M5P-fA-ceq" secondAttribute="bottom" constant="30" id="381-bt-Br7"/>
+                                    <constraint firstItem="M5P-fA-ceq" firstAttribute="centerX" secondItem="ex0-fe-eRD" secondAttribute="centerX" id="3HU-XB-hQj"/>
+                                    <constraint firstItem="KEv-P4-rW6" firstAttribute="centerX" secondItem="M5P-fA-ceq" secondAttribute="centerX" id="4K0-xc-o8P"/>
+                                    <constraint firstItem="HMG-bL-HMF" firstAttribute="top" secondItem="KEv-P4-rW6" secondAttribute="bottom" constant="10" id="G3q-tn-ejE"/>
+                                    <constraint firstItem="HMG-bL-HMF" firstAttribute="centerX" secondItem="KEv-P4-rW6" secondAttribute="centerX" id="VSq-hV-8fv"/>
+                                    <constraint firstItem="KEv-P4-rW6" firstAttribute="leading" secondItem="ex0-fe-eRD" secondAttribute="leading" constant="20" id="XqQ-gl-Jgh"/>
+                                    <constraint firstItem="HMG-bL-HMF" firstAttribute="width" secondItem="KEv-P4-rW6" secondAttribute="width" multiplier="1.03521" id="Zct-eZ-qJq"/>
+                                    <constraint firstAttribute="height" constant="200" id="ddl-JK-ttE"/>
+                                    <constraint firstItem="M5P-fA-ceq" firstAttribute="top" secondItem="ex0-fe-eRD" secondAttribute="top" constant="20" id="h97-kh-bIh"/>
+                                    <constraint firstItem="HMG-bL-HMF" firstAttribute="height" secondItem="KEv-P4-rW6" secondAttribute="height" id="kGX-mI-sSv"/>
+                                    <constraint firstItem="M5P-fA-ceq" firstAttribute="leading" secondItem="ex0-fe-eRD" secondAttribute="leading" constant="20" id="vrl-bc-odQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5f5-zZ-cIK" firstAttribute="top" secondItem="ZaJ-Y7-g9u" secondAttribute="top" id="1FD-ee-c6T"/>
+                            <constraint firstItem="5f5-zZ-cIK" firstAttribute="leading" secondItem="ZaJ-Y7-g9u" secondAttribute="leading" id="HkD-8Y-cXU"/>
+                            <constraint firstItem="ex0-fe-eRD" firstAttribute="centerY" secondItem="5f5-zZ-cIK" secondAttribute="centerY" id="MGt-Rh-l58"/>
+                            <constraint firstItem="ex0-fe-eRD" firstAttribute="leading" secondItem="IEK-BY-bAH" secondAttribute="leading" constant="45" id="ab5-wa-zJQ"/>
+                            <constraint firstItem="IEK-BY-bAH" firstAttribute="trailing" secondItem="ex0-fe-eRD" secondAttribute="trailing" constant="45" id="rl2-Hf-QdJ"/>
+                            <constraint firstItem="ex0-fe-eRD" firstAttribute="centerX" secondItem="5f5-zZ-cIK" secondAttribute="centerX" id="sQw-Ph-ddc"/>
+                            <constraint firstAttribute="trailing" secondItem="5f5-zZ-cIK" secondAttribute="trailing" id="vk7-wP-20h"/>
+                            <constraint firstAttribute="bottom" secondItem="5f5-zZ-cIK" secondAttribute="bottom" id="xQs-NN-hU8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IEK-BY-bAH"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="HMG-bL-HMF" id="esY-Sg-Hq6"/>
+                        <outlet property="infoLabel" destination="M5P-fA-ceq" id="KUK-Dp-WgU"/>
+                        <outlet property="loginBtn" destination="KEv-P4-rW6" id="88e-Ia-RwM"/>
+                        <outlet property="popUpView" destination="ex0-fe-eRD" id="GVO-Le-gSP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ave-UR-1Vg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="19"/>
+        </scene>
+    </scenes>
+</document>

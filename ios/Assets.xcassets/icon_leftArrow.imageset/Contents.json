@@ -1,0 +1,27 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "alignment-insets" : {
+        "bottom" : 0,
+        "left" : 0,
+        "right" : 100,
+        "top" : 0
+      },
+      "filename" : "icon_leftArrow.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

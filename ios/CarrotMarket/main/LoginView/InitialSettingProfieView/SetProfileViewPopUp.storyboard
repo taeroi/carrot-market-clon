@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Profile View Pop Up-->
+        <scene sceneID="cl3-uW-IPx">
+            <objects>
+                <viewController storyboardIdentifier="SetProfileViewPopUp" id="VvT-Xo-9OS" customClass="SetProfileViewPopUp" customModule="carrotTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jdb-7A-539">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-wD-rB6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvI-AE-Voq">
+                                        <rect key="frame" x="10" y="7.5" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2Op-n8-4WN"/>
+                                        </constraints>
+                                        <state key="normal" title="닫기">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedDismissBtn:" destination="VvT-Xo-9OS" eventType="touchUpInside" id="0lW-gI-dcM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw3-LQ-4FK">
+                                        <rect key="frame" x="356" y="7.5" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="BiV-FF-df8"/>
+                                        </constraints>
+                                        <state key="normal" title="완료">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedOkBtn:" destination="VvT-Xo-9OS" eventType="touchUpInside" id="zM3-C5-fk5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TG-jZ-qDg">
+                                        <rect key="frame" x="170" y="12" width="74" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VvI-AE-Voq" firstAttribute="centerY" secondItem="wJ1-wD-rB6" secondAttribute="centerY" id="NjE-iO-4VK"/>
+                                    <constraint firstItem="6TG-jZ-qDg" firstAttribute="centerX" secondItem="wJ1-wD-rB6" secondAttribute="centerX" id="O1y-Cn-8RY"/>
+                                    <constraint firstItem="VvI-AE-Voq" firstAttribute="leading" secondItem="wJ1-wD-rB6" secondAttribute="leading" constant="10" id="XTr-wl-W9O"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xw3-LQ-4FK" secondAttribute="trailing" constant="8" id="eGZ-Ou-gJ6"/>
+                                    <constraint firstItem="Xw3-LQ-4FK" firstAttribute="centerY" secondItem="wJ1-wD-rB6" secondAttribute="centerY" id="h5x-XW-xJY"/>
+                                    <constraint firstItem="6TG-jZ-qDg" firstAttribute="centerY" secondItem="wJ1-wD-rB6" secondAttribute="centerY" id="hQx-Ly-KM6"/>
+                                    <constraint firstAttribute="height" constant="45" id="z6q-4n-2ru"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0To-E9-Tba">
+                                <rect key="frame" x="30" y="388" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VRq-cP-wzX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필사진과 닉네임을 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHD-UX-XGW">
+                                <rect key="frame" x="111.5" y="458" width="191" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXV-c0-8iA">
+                                <rect key="frame" x="117" y="178" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Xe4-K1-5nM"/>
+                                    <constraint firstAttribute="width" constant="180" id="p65-7D-wGd"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_profile"/>
+                                <connections>
+                                    <action selector="uploadBtn:" destination="VvT-Xo-9OS" eventType="touchUpInside" id="3oc-Ux-GCY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_camera" translatesAutoresizingMaskIntoConstraints="NO" id="OOG-NI-Moy">
+                                <rect key="frame" x="257" y="333" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Bic-2N-MEh"/>
+                                    <constraint firstAttribute="width" constant="25" id="umz-4U-3xC"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boA-1b-Zrh">
+                                <rect key="frame" x="90" y="446" width="234" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임은 최소 2자 입니당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuW-Wf-lAf">
+                                        <rect key="frame" x="32" y="23.5" width="170" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 사진과 닉네임을 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Da-LG-fig">
+                                        <rect key="frame" x="20" y="64.5" width="194.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="iuW-Wf-lAf" firstAttribute="centerX" secondItem="boA-1b-Zrh" secondAttribute="centerX" id="PNO-Wc-zv4"/>
+                                    <constraint firstItem="0Da-LG-fig" firstAttribute="top" secondItem="iuW-Wf-lAf" secondAttribute="bottom" constant="20" id="Pzk-CX-Icz"/>
+                                    <constraint firstItem="iuW-Wf-lAf" firstAttribute="centerY" secondItem="boA-1b-Zrh" secondAttribute="centerY" constant="-30" id="U2d-A3-Th9"/>
+                                    <constraint firstItem="0Da-LG-fig" firstAttribute="centerX" secondItem="boA-1b-Zrh" secondAttribute="centerX" id="sy1-cy-VNi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kxx-X9-qUE" firstAttribute="trailing" secondItem="wJ1-wD-rB6" secondAttribute="trailing" id="5gU-mn-6fC"/>
+                            <constraint firstItem="0To-E9-Tba" firstAttribute="leading" secondItem="kxx-X9-qUE" secondAttribute="leading" constant="30" id="Afv-0E-CBL"/>
+                            <constraint firstItem="0To-E9-Tba" firstAttribute="top" secondItem="CXV-c0-8iA" secondAttribute="bottom" constant="30" id="Al2-uE-HSZ"/>
+                            <constraint firstItem="kxx-X9-qUE" firstAttribute="top" secondItem="wJ1-wD-rB6" secondAttribute="top" id="Awv-B0-vd4"/>
+                            <constraint firstItem="wJ1-wD-rB6" firstAttribute="leading" secondItem="kxx-X9-qUE" secondAttribute="leading" id="Azl-Le-7fn"/>
+                            <constraint firstItem="kxx-X9-qUE" firstAttribute="bottom" secondItem="boA-1b-Zrh" secondAttribute="bottom" constant="288" id="D7L-J3-Y8X"/>
+                            <constraint firstItem="CXV-c0-8iA" firstAttribute="centerX" secondItem="Jdb-7A-539" secondAttribute="centerX" id="Dh6-ev-u3c"/>
+                            <constraint firstItem="boA-1b-Zrh" firstAttribute="leading" secondItem="kxx-X9-qUE" secondAttribute="leading" constant="90" id="FFW-xP-CDl"/>
+                            <constraint firstItem="0To-E9-Tba" firstAttribute="top" secondItem="OOG-NI-Moy" secondAttribute="bottom" constant="30" id="Gf2-CX-MmO"/>
+                            <constraint firstItem="boA-1b-Zrh" firstAttribute="top" secondItem="0To-E9-Tba" secondAttribute="bottom" constant="8" id="I2q-Ip-9l2"/>
+                            <constraint firstItem="0To-E9-Tba" firstAttribute="centerX" secondItem="Jdb-7A-539" secondAttribute="centerX" id="Kot-lC-AZc"/>
+                            <constraint firstItem="cHD-UX-XGW" firstAttribute="centerX" secondItem="Jdb-7A-539" secondAttribute="centerX" id="PPQ-hZ-RiB"/>
+                            <constraint firstItem="boA-1b-Zrh" firstAttribute="centerX" secondItem="kxx-X9-qUE" secondAttribute="centerX" id="RWU-vf-vxG"/>
+                            <constraint firstItem="OOG-NI-Moy" firstAttribute="leading" secondItem="CXV-c0-8iA" secondAttribute="trailing" constant="-40" id="TNn-8S-oHJ"/>
+                            <constraint firstItem="CXV-c0-8iA" firstAttribute="centerY" secondItem="Jdb-7A-539" secondAttribute="centerY" constant="-180" id="YOQ-qN-Bas"/>
+                            <constraint firstItem="cHD-UX-XGW" firstAttribute="top" secondItem="0To-E9-Tba" secondAttribute="bottom" constant="20" id="cWx-Pm-SYO"/>
+                            <constraint firstItem="kxx-X9-qUE" firstAttribute="trailing" secondItem="boA-1b-Zrh" secondAttribute="trailing" constant="90" id="lzF-Gs-shC"/>
+                            <constraint firstItem="kxx-X9-qUE" firstAttribute="trailing" secondItem="0To-E9-Tba" secondAttribute="trailing" constant="30" id="nRn-eN-pIK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kxx-X9-qUE"/>
+                    </view>
+                    <connections>
+                        <outlet property="nickNameTextfield" destination="0To-E9-Tba" id="laa-h2-55R"/>
+                        <outlet property="okBtn" destination="Xw3-LQ-4FK" id="mlO-uW-XFm"/>
+                        <outlet property="profileImgBtn" destination="CXV-c0-8iA" id="BSf-ej-vdV"/>
+                        <outlet property="warningView" destination="boA-1b-Zrh" id="Eo1-zE-f4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ZR-aS-p90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="-232.36607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_camera" width="54" height="48"/>
+        <image name="icon_profile" width="120" height="120"/>
+    </resources>
+</document>

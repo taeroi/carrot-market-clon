@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CertificationViewController" customModule="carrotTest" customModuleProvider="target">
+            <connections>
+                <outlet property="findByNeighborhoodLocationBtn" destination="ONa-PY-2NP" id="1N7-fl-tJr"/>
+                <outlet property="neighborhoodTableView" destination="9IF-EN-Qhq" id="x7O-g9-NgD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6R-nM-NpX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONa-PY-2NP">
+                            <rect key="frame" x="15" y="12" width="384" height="40"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="GG5-MC-ZoO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="현재위치로 찾기">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="pressedgetFindByNeighborhoodLocation:" destination="-1" eventType="touchUpInside" id="Obs-gy-O5S"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="근처 동네" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22c-FS-3xP">
+                            <rect key="frame" x="15" y="62" width="52.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="22c-FS-3xP" secondAttribute="bottom" constant="1" id="3qb-Wu-NaZ"/>
+                        <constraint firstAttribute="height" constant="80" id="Jod-YY-nce"/>
+                        <constraint firstAttribute="trailing" secondItem="ONa-PY-2NP" secondAttribute="trailing" constant="15" id="WHW-m1-cVs"/>
+                        <constraint firstItem="22c-FS-3xP" firstAttribute="top" secondItem="ONa-PY-2NP" secondAttribute="bottom" constant="10" id="fxC-Zd-QIb"/>
+                        <constraint firstItem="ONa-PY-2NP" firstAttribute="leading" secondItem="N6R-nM-NpX" secondAttribute="leading" constant="15" id="htK-yB-lwo"/>
+                        <constraint firstItem="22c-FS-3xP" firstAttribute="leading" secondItem="N6R-nM-NpX" secondAttribute="leading" constant="15" id="wGo-2V-CDk"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9IF-EN-Qhq">
+                    <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9IF-EN-Qhq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Cn-up-V53"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="N6R-nM-NpX" secondAttribute="top" id="4ow-he-qyq"/>
+                <constraint firstItem="9IF-EN-Qhq" firstAttribute="top" secondItem="N6R-nM-NpX" secondAttribute="bottom" id="AYB-nO-tjO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9IF-EN-Qhq" secondAttribute="trailing" id="Qbn-eW-2Kw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9IF-EN-Qhq" secondAttribute="bottom" id="pyq-Wj-UTL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N6R-nM-NpX" secondAttribute="trailing" id="smG-7B-1nc"/>
+                <constraint firstItem="N6R-nM-NpX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ySF-dv-P83"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

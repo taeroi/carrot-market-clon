@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="carrotTest" customModuleProvider="target">
+            <connections>
+                <outlet property="imgvAvatar" destination="7yR-Z9-Xio" id="gVa-g8-RUT"/>
+                <outlet property="infoLabel" destination="dFj-ki-0v1" id="qd8-fE-RhJ"/>
+                <outlet property="uiStartBtn" destination="fGY-lX-75g" id="n3B-yg-VyY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_town" translatesAutoresizingMaskIntoConstraints="NO" id="370-c8-QNF">
+                    <rect key="frame" x="82" y="283" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="ToZ-3n-GdT"/>
+                        <constraint firstAttribute="height" constant="250" id="sPq-AP-FCf"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_pin" translatesAutoresizingMaskIntoConstraints="NO" id="TJ2-ft-Qwb">
+                    <rect key="frame" x="187" y="388" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Fsx-gB-DEJ"/>
+                        <constraint firstAttribute="width" constant="40" id="SuC-LP-b9e"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="zdS-hk-hFJ">
+                    <rect key="frame" x="92" y="176" width="230" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="5vo-5B-TeM"/>
+                        <constraint firstAttribute="height" constant="80" id="Qk5-gB-Ang"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq6-BT-WDs">
+                    <rect key="frame" x="96.5" y="557" width="221.5" height="22"/>
+                    <attributedString key="attributedText">
+                        <fragment content="우리 동네 중고 직거래 당근마켓">
+                            <attributes>
+                                <font key="NSFont" size="18" name="AppleSDGothicNeo-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFj-ki-0v1" userLabel="당근마켓은 직거래 마켓이에요. 내 동네를 설정하고 시작해보세요!">
+                    <rect key="frame" x="123" y="589" width="168" height="24"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">당근마켓은 직거래 마켓이에요.
+내 동네를 설정하고 시작해보세요!</string>
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGY-lX-75g">
+                    <rect key="frame" x="42" y="653" width="330" height="40"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Mr-h3-Xsb"/>
+                        <constraint firstAttribute="width" constant="330" id="wSb-Dh-Ydp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                    <state key="normal" title="내 동네 설정하고 시작하기">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pressedPresentLoginViewController:" destination="-1" eventType="touchUpInside" id="I9g-dZ-0RS"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7yR-Z9-Xio">
+                    <rect key="frame" x="142" y="343" width="130" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="DqN-98-Ung"/>
+                        <constraint firstAttribute="height" constant="130" id="dek-Ju-0pT"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-aC-A8H">
+                    <rect key="frame" x="147" y="713" width="100" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="c8Q-II-dy3"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="90" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="🇰🇷 한국" image="icon_downarrow">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="370-c8-QNF" firstAttribute="top" secondItem="zdS-hk-hFJ" secondAttribute="bottom" constant="27" id="1Uo-Zm-ydz"/>
+                <constraint firstItem="Nq6-BT-WDs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1ym-A0-uLO"/>
+                <constraint firstItem="7yR-Z9-Xio" firstAttribute="centerY" secondItem="370-c8-QNF" secondAttribute="centerY" id="3rn-eB-1Vk"/>
+                <constraint firstItem="370-c8-QNF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="89h-K9-VM1"/>
+                <constraint firstItem="jZi-aC-A8H" firstAttribute="centerX" secondItem="fGY-lX-75g" secondAttribute="centerX" constant="-10" id="Dhf-1o-AG1"/>
+                <constraint firstItem="TJ2-ft-Qwb" firstAttribute="centerY" secondItem="370-c8-QNF" secondAttribute="centerY" id="DxT-WZ-l8E"/>
+                <constraint firstItem="370-c8-QNF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="GNS-Nn-xXk"/>
+                <constraint firstItem="jZi-aC-A8H" firstAttribute="top" secondItem="fGY-lX-75g" secondAttribute="bottom" constant="20" id="Ham-pn-7Zz"/>
+                <constraint firstItem="7yR-Z9-Xio" firstAttribute="centerX" secondItem="370-c8-QNF" secondAttribute="centerX" id="M1A-cc-XjL"/>
+                <constraint firstItem="zdS-hk-hFJ" firstAttribute="centerX" secondItem="370-c8-QNF" secondAttribute="centerX" id="SQU-TD-W4G"/>
+                <constraint firstItem="Nq6-BT-WDs" firstAttribute="top" secondItem="370-c8-QNF" secondAttribute="bottom" constant="24" id="bg8-jk-FOO"/>
+                <constraint firstItem="fGY-lX-75g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g7t-Pq-mjr"/>
+                <constraint firstItem="dFj-ki-0v1" firstAttribute="top" secondItem="Nq6-BT-WDs" secondAttribute="bottom" constant="10" id="gG5-0z-sS1"/>
+                <constraint firstItem="TJ2-ft-Qwb" firstAttribute="centerX" secondItem="370-c8-QNF" secondAttribute="centerX" id="gNk-6s-Ay6"/>
+                <constraint firstItem="dFj-ki-0v1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kV6-y8-2Oz"/>
+                <constraint firstItem="fGY-lX-75g" firstAttribute="top" secondItem="dFj-ki-0v1" secondAttribute="bottom" constant="40" id="uR2-GP-L3l"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_downarrow" width="12" height="7"/>
+        <image name="onboarding_pin" width="96" height="108"/>
+        <image name="onboarding_town" width="678" height="654"/>
+        <image name="title" width="469" height="224"/>
+    </resources>
+</document>

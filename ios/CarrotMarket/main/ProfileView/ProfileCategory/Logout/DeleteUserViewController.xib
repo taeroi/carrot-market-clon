@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteUserViewController" customModule="carrotTest" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteBtn" destination="eKi-VK-vtW" id="KRs-fa-Puv"/>
+                <outlet property="nickNameLabel" destination="hI0-rI-GxO" id="T1c-aM-h4a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKi-VK-vtW">
+                    <rect key="frame" x="147" y="433" width="120" height="40"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="PuG-oH-mAT"/>
+                        <constraint firstAttribute="height" constant="40" id="pTt-0J-KUT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="로그아웃">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pressedDeleteBtn:" destination="-1" eventType="touchUpInside" id="vsk-uc-VAk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI0-rI-GxO">
+                    <rect key="frame" x="50" y="76" width="36.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="님 로그아웃 하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lq-xk-Kk0">
+                    <rect key="frame" x="86.5" y="76" width="179" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="eKi-VK-vtW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SJ6-HA-vhd"/>
+                <constraint firstItem="eKi-VK-vtW" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Z0M-Q9-Lkd"/>
+                <constraint firstItem="7lq-xk-Kk0" firstAttribute="leading" secondItem="hI0-rI-GxO" secondAttribute="trailing" id="c9U-tA-74O"/>
+                <constraint firstItem="hI0-rI-GxO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="iJS-4V-UmA"/>
+                <constraint firstItem="7lq-xk-Kk0" firstAttribute="centerY" secondItem="hI0-rI-GxO" secondAttribute="centerY" id="jsf-UU-IYO"/>
+                <constraint firstItem="hI0-rI-GxO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="vfy-Dh-Gdg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </view>
+    </objects>
+</document>

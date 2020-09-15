@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete Post Pop Up-->
+        <scene sceneID="yc9-Pu-xar">
+            <objects>
+                <viewController storyboardIdentifier="DeletePostPopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cgj-9G-v2S" customClass="DeletePostPopUp" customModule="carrotTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glF-OS-l7B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cn5-Iz-bZn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao7-vV-UTK">
+                                <rect key="frame" x="30" y="378" width="354" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게시글을 정말 삭제하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7N-H5-KaA">
+                                        <rect key="frame" x="35.5" y="35" width="223" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-aA-px3">
+                                        <rect key="frame" x="207" y="90" width="100" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veJ-sZ-iAo">
+                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="30"/>
+                                                <state key="normal" title="취소">
+                                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressedCancelBtn:" destination="cgj-9G-v2S" eventType="touchUpInside" id="Teh-X9-4Je"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2A-9P-l1O">
+                                                <rect key="frame" x="63.5" y="0.0" width="36.5" height="30"/>
+                                                <state key="normal" title="삭제">
+                                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressedDeleteBtn:" destination="cgj-9G-v2S" eventType="touchUpInside" id="FDI-OV-RLY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="su6-By-BLq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="O7N-H5-KaA" firstAttribute="centerY" secondItem="Ao7-vV-UTK" secondAttribute="centerY" constant="-30" id="2VR-Xn-nwr"/>
+                                    <constraint firstAttribute="height" constant="150" id="Jsk-xT-PZh"/>
+                                    <constraint firstItem="O7N-H5-KaA" firstAttribute="centerX" secondItem="Ao7-vV-UTK" secondAttribute="centerX" constant="-30" id="PDw-ZP-wVF"/>
+                                    <constraint firstItem="CLP-aA-px3" firstAttribute="centerY" secondItem="Ao7-vV-UTK" secondAttribute="centerY" constant="30" id="UK3-YD-Dro"/>
+                                    <constraint firstItem="CLP-aA-px3" firstAttribute="centerX" secondItem="Ao7-vV-UTK" secondAttribute="centerX" constant="80" id="YS1-9w-wBa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GaX-xR-z3z" firstAttribute="leading" secondItem="cn5-Iz-bZn" secondAttribute="leading" id="RP3-ka-3zq"/>
+                            <constraint firstItem="Ao7-vV-UTK" firstAttribute="leading" secondItem="cn5-Iz-bZn" secondAttribute="leading" constant="30" id="SNP-Rj-2cQ"/>
+                            <constraint firstItem="Ao7-vV-UTK" firstAttribute="centerX" secondItem="cn5-Iz-bZn" secondAttribute="centerX" id="WoZ-71-aDF"/>
+                            <constraint firstItem="GaX-xR-z3z" firstAttribute="top" secondItem="cn5-Iz-bZn" secondAttribute="top" id="anw-Ts-e8P"/>
+                            <constraint firstItem="Ao7-vV-UTK" firstAttribute="centerY" secondItem="cn5-Iz-bZn" secondAttribute="centerY" id="cYZ-Gm-mEc"/>
+                            <constraint firstItem="cn5-Iz-bZn" firstAttribute="bottom" secondItem="GaX-xR-z3z" secondAttribute="bottom" id="f65-gY-2f6"/>
+                            <constraint firstItem="GaX-xR-z3z" firstAttribute="trailing" secondItem="cn5-Iz-bZn" secondAttribute="trailing" id="ytq-Ub-3EG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GaX-xR-z3z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngE-sD-aFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="123"/>
+        </scene>
+    </scenes>
+</document>
